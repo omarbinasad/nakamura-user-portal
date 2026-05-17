@@ -1,0 +1,959 @@
+/* =========================================
+   Responsive CSS
+========================================= */
+
+@media (max-width: 991px) {
+  .main-nav {
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    background: var(--color-white);
+    border-top: 1px solid var(--color-border);
+    box-shadow: var(--shadow-sm);
+    padding: var(--space-md);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 50;
+  }
+
+  .main-nav.show {
+    display: flex;
+  }
+
+  .mobile-menu-btn {
+    display: inline-flex;
+  }
+
+  .user-sidebar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xs);
+  }
+
+  .sidebar-link {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  :root {
+    --header-height: 76px;
+  }
+
+  .brand-logo img {
+    width: 110px;
+  }
+
+  .user-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .page-content {
+    padding: var(--space-lg);
+  }
+
+  .page-title {
+    font-size: var(--fs-xl);
+  }
+}
+/* =========================================
+   Login Responsive
+========================================= */
+
+@media (max-width: 991px) {
+  .login-wrapper {
+    padding-top: 28px;
+  }
+
+  .login-visual-side,
+  .login-artwork {
+    min-height: 430px;
+  }
+
+  .login-info-card {
+    padding: 24px;
+  }
+
+  .login-info-card > .login-support-card {
+    width: 100%;
+  }
+
+  .login-steps-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .step-arrow {
+    transform: rotate(90deg);
+    margin-left: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --header-height: 68px;
+  }
+  /* Header css */
+  .site-header-inner {
+    gap: 12px;
+  }
+
+  .site-logo {
+    width: 138px;
+  }
+
+  .site-header-actions {
+    gap: 8px;
+  }
+
+  .header-help-link {
+    font-size: 13px;
+  }
+
+  .header-help-link i {
+    font-size: 17px;
+  }
+
+  .header-signin-btn {
+    min-height: 40px;
+    padding: 0 17px;
+    border-radius: 12px;
+    font-size: 13px;
+  }
+  .login-wrapper {
+    padding-top: 18px;
+    padding-bottom: 24px;
+  }
+  .login-steps-row {
+    gap: 5px;
+  }
+  .login-main-card {
+    border-radius: var(--login-radius-md);
+  }
+
+  .login-form-side {
+    padding: 30px 22px;
+  }
+
+  .login-form-side h1 {
+    font-size: 26px;
+  }
+
+  .login-subtitle {
+    font-size: 14px;
+  }
+
+  .login-visual-side,
+  .login-artwork {
+    min-height: 360px;
+    display: none;
+  }
+
+  .login-plane {
+    top: 70px;
+    left: 48px;
+    font-size: 68px;
+  }
+
+  .login-suitcase {
+    right: 34px;
+    bottom: 112px;
+    transform: scale(0.78);
+    transform-origin: bottom right;
+  }
+
+  .quick-travel-card {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    padding: 18px;
+  }
+
+  .quick-travel-grid {
+    --bs-gutter-x: 14px;
+    --bs-gutter-y: 14px;
+  }
+
+  .login-info-card {
+    margin-top: 18px;
+    border-radius: var(--login-radius-md);
+    padding: 22px;
+  }
+
+  .login-step-item {
+    min-width: 100%;
+  }
+
+  .login-copyright {
+    margin-top: 24px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form-side {
+    padding: 26px 18px;
+  }
+
+  .login-form-side h1 {
+    font-size: 24px;
+  }
+
+  .login-input-box,
+  .login-submit-btn {
+    height: 54px;
+  }
+
+  .secure-login-note {
+    align-items: flex-start;
+  }
+
+  .login-visual-side,
+  .login-artwork {
+    min-height: 330px;
+  }
+
+  .login-plane {
+    font-size: 58px;
+  }
+
+  .login-suitcase {
+    right: 20px;
+    bottom: 104px;
+    transform: scale(0.66);
+  }
+
+  .cloud-one {
+    right: 30px;
+  }
+
+  .cloud-two {
+    left: 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  /* Header css */
+  .site-logo {
+    width: 122px;
+  }
+
+  .header-help-link span {
+    display: none;
+  }
+
+  .header-help-link {
+    width: 38px;
+    height: 38px;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: var(--color-primary-light, #f0edff);
+  }
+
+  .header-signin-btn {
+    min-height: 38px;
+    padding: 0 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  /* Header css */
+  .site-logo {
+    width: 110px;
+  }
+
+  .header-signin-btn {
+    padding: 0 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-logo-text {
+    font-size: 15px;
+  }
+
+  .brand-logo img {
+    width: 138px;
+  }
+}
+
+@media (max-width: 430px) {
+  .site-logo-text {
+    font-size: 13px;
+    max-width: 130px;
+  }
+
+  .brand-logo img {
+    width: 122px;
+  }
+}
+
+/* ================================
+   OTP Verification Responsive
+================================ */
+
+@media (max-width: 991px) {
+  .otp-page-section {
+    padding: 42px 0 34px;
+  }
+
+  .otp-card {
+    max-width: 600px;
+    padding: 34px 48px 34px;
+  }
+
+  .otp-info-card {
+    max-width: 680px;
+    gap: 20px;
+    padding: 22px;
+  }
+
+  .otp-info-item {
+    gap: 14px;
+  }
+
+  .otp-info-icon {
+    width: 48px;
+    height: 48px;
+    flex-basis: 48px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .otp-page-section {
+    min-height: calc(100vh - var(--header-height, 68px));
+    padding: 30px 0;
+  }
+
+  .otp-card {
+    padding: 30px 22px;
+    border-radius: 14px;
+  }
+
+  .otp-secure-image {
+    width: 128px;
+  }
+
+  .otp-title {
+    font-size: 26px;
+  }
+
+  .otp-description {
+    font-size: 14px;
+  }
+
+  .otp-input-group {
+    gap: 10px;
+    margin-bottom: 22px;
+  }
+
+  .otp-input {
+    width: 50px;
+    height: 56px;
+    border-radius: 9px;
+    font-size: 22px;
+  }
+
+  .otp-info-card {
+    margin-top: 26px;
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 10px 22px;
+  }
+
+  .otp-info-item {
+    padding: 18px 0;
+  }
+
+  .otp-info-divider {
+    width: 100%;
+    height: 1px;
+  }
+}
+
+@media (max-width: 480px) {
+  .otp-page-section {
+    padding: 22px 0;
+  }
+
+  .otp-card {
+    padding: 28px 16px;
+  }
+
+  .otp-secure-image {
+    width: 118px;
+  }
+
+  .otp-title {
+    font-size: 24px;
+  }
+
+  .otp-email-badge {
+    margin: 18px auto 22px;
+    font-size: 13px;
+  }
+
+  .otp-input-group {
+    gap: 8px;
+  }
+
+  .otp-input {
+    width: 43px;
+    height: 52px;
+    font-size: 20px;
+  }
+
+  .otp-resend-text {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .otp-submit-btn {
+    min-height: 50px;
+  }
+
+  .otp-back-link {
+    font-size: 14px;
+  }
+
+  .otp-info-card {
+    padding: 8px 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .otp-input-group {
+    gap: 6px;
+  }
+
+  .otp-input {
+    width: 38px;
+    height: 48px;
+    font-size: 18px;
+  }
+
+  .otp-card {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+/* ================================
+   Reset Password Responsive
+================================ */
+
+@media (max-width: 991px) {
+  .reset-password-page-section {
+    padding: 42px 0 34px;
+  }
+
+  .reset-password-card {
+    max-width: 600px;
+    padding: 38px 46px 32px;
+  }
+
+  .reset-info-card {
+    max-width: 680px;
+    gap: 20px;
+    padding: 22px;
+  }
+
+  .reset-info-item {
+    gap: 14px;
+  }
+
+  .reset-info-icon {
+    width: 48px;
+    height: 48px;
+    flex-basis: 48px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .reset-password-page-section {
+    min-height: calc(100vh - var(--header-height, 68px));
+    padding: 30px 0;
+  }
+
+  .reset-password-card {
+    padding: 32px 22px 30px;
+    border-radius: 14px;
+  }
+
+  .reset-password-illustration {
+    width: 132px;
+    height: 86px;
+    margin-bottom: 16px;
+  }
+
+  .reset-shield-icon {
+    width: 76px;
+    height: 76px;
+  }
+
+  .reset-shield-icon i {
+    font-size: 50px;
+  }
+
+  .reset-password-title {
+    font-size: 26px;
+  }
+
+  .reset-password-description {
+    margin-bottom: 26px;
+    font-size: 14px;
+  }
+
+  .reset-password-field {
+    min-height: 54px;
+    padding: 0 14px;
+  }
+
+  .reset-form-control {
+    height: 52px;
+    font-size: 17px;
+  }
+
+  .reset-info-card {
+    margin-top: 26px;
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 10px 22px;
+  }
+
+  .reset-info-item {
+    padding: 18px 0;
+  }
+
+  .reset-info-divider {
+    width: 100%;
+    height: 1px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reset-password-page-section {
+    padding: 22px 0;
+  }
+
+  .reset-password-card {
+    padding: 30px 16px 28px;
+  }
+
+  .reset-password-illustration {
+    width: 120px;
+    height: 78px;
+  }
+
+  .reset-shield-icon {
+    width: 68px;
+    height: 68px;
+  }
+
+  .reset-shield-icon i {
+    font-size: 44px;
+  }
+
+  .reset-password-title {
+    font-size: 24px;
+  }
+
+  .reset-password-description {
+    font-size: 14px;
+  }
+
+  .reset-form-label {
+    font-size: 13px;
+  }
+
+  .reset-password-field {
+    min-height: 52px;
+  }
+
+  .reset-form-control {
+    height: 50px;
+    font-size: 16px;
+    letter-spacing: 4px;
+  }
+
+  .reset-password-hint {
+    font-size: 13px;
+  }
+
+  .reset-match-text {
+    justify-content: flex-start;
+    font-size: 13px;
+  }
+
+  .reset-submit-btn {
+    min-height: 50px;
+  }
+
+  .reset-signin-text {
+    font-size: 14px;
+  }
+
+  .reset-info-card {
+    padding: 8px 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .reset-password-card {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .reset-form-control {
+    letter-spacing: 3px;
+  }
+
+  .reset-strength-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+/* ================================
+   Profile Page Responsive
+================================ */
+
+@media (max-width: 1199px) {
+  .profile-layout {
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 991px) {
+  .profile-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-sidebar {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .profile-side-card {
+    padding: 20px;
+  }
+
+  .profile-help-text {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .profile-page-section {
+    padding: 28px 0 40px;
+  }
+
+  .profile-page-heading h1,
+  .profile-edit-heading h1 {
+    font-size: 26px;
+  }
+
+  .profile-summary-card {
+    padding: 22px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .profile-summary-left {
+    width: 100%;
+    gap: 18px;
+  }
+
+  .profile-avatar-wrap {
+    width: 76px;
+    height: 76px;
+    flex-basis: 76px;
+  }
+
+  .profile-summary-info h2 {
+    font-size: 22px;
+  }
+
+  .profile-edit-btn {
+    width: 100%;
+  }
+
+  .profile-form-card {
+    padding: 0 20px;
+  }
+
+  .profile-form-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .profile-photo-edit-row {
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .profile-security-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .profile-change-password-btn {
+    width: 100%;
+  }
+
+  .profile-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-form-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .profile-save-btn,
+  .profile-cancel-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-page-section {
+    padding: 22px 0 34px;
+  }
+
+  .profile-summary-left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-summary-card,
+  .profile-form-card,
+  .profile-side-card {
+    border-radius: 12px;
+  }
+
+  .profile-form-card {
+    padding: 0 16px;
+  }
+
+  .profile-edit-heading {
+    padding: 24px 0 22px;
+  }
+
+  .profile-photo-edit-row {
+    flex-direction: column;
+  }
+
+  .profile-phone-field {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-verified-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .profile-account-menu a {
+    min-height: 44px;
+  }
+}
+/* header user area */
+@media (max-width: 575px) {
+  .dashboard-header-actions {
+    gap: 12px;
+  }
+
+  .dashboard-profile-btn span {
+    display: none;
+  }
+
+  .dashboard-profile-btn img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .dashboard-signout-btn {
+    min-height: 38px;
+    padding: 0 15px;
+    font-size: 13px;
+  }
+}
+/* ================================
+   Trips / Bookings Responsive
+================================ */
+
+@media (max-width: 1199px) {
+  .trips-layout {
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 24px;
+  }
+
+  .trip-card {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .trip-route-block {
+    grid-column: 1 / -1;
+    padding-right: 0;
+    padding-bottom: 18px;
+    border-right: 0;
+    border-bottom: 1px solid var(--color-border, #eef0f6);
+  }
+
+  .trip-action-block {
+    grid-column: 1 / -1;
+    grid-template-columns: auto 1fr 1fr;
+    align-items: center;
+  }
+
+  .trip-status-badge {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .trips-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar-toggle-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sidebar-backdrop {
+    display: block;
+  }
+
+  .trips-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: min(360px, 86vw);
+    height: 100vh;
+    height: 100dvh;
+    margin: 0;
+    padding: calc(var(--header-height, 86px) + 18px) 18px 24px;
+    background-color: var(--color-white, #ffffff);
+    border-left: 1px solid var(--color-border, #eef0f6);
+    box-shadow: -18px 0 50px rgba(47, 43, 95, 0.18);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    transform: translateX(105%);
+    transition: transform 0.35s ease;
+    z-index: 1025;
+    align-content: start;
+  }
+
+  .trips-sidebar.is-active {
+    transform: translateX(0);
+  }
+
+  .trips-side-card {
+    padding: 20px;
+  }
+
+  .trips-help-text {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .trips-page-section {
+    padding: 28px 0 40px;
+  }
+
+  .trips-page-heading h1 {
+    font-size: 26px;
+  }
+
+  .trips-page-heading p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .trips-stats-row {
+    margin-bottom: 24px;
+  }
+
+  .trips-stat-card {
+    width: 100%;
+  }
+
+  .trip-card {
+    padding: 18px;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .trip-info-block {
+    padding-right: 0;
+    padding-bottom: 18px;
+    border-right: 0;
+    border-bottom: 1px solid var(--color-border, #eef0f6);
+    grid-auto-flow: column;
+  }
+
+  .trip-action-block {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .trip-status-badge {
+    margin-left: 0;
+  }
+
+  .trip-action-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .trips-page-section {
+    padding: 22px 0 34px;
+  }
+
+  .trips-alert {
+    align-items: flex-start;
+    padding: 14px;
+  }
+
+  .trips-alert-content {
+    align-items: flex-start;
+    font-size: 13px;
+  }
+
+  .trip-card,
+  .trips-side-card,
+  .trips-stat-card {
+    border-radius: 12px;
+  }
+
+  .trip-route-block h2 {
+    font-size: 20px;
+  }
+
+  .trip-date-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .trip-dot {
+    display: none;
+  }
+
+  .trip-airline-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .trips-account-menu a {
+    min-height: 44px;
+  }
+}

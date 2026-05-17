@@ -1,0 +1,6 @@
+Add these images here when ready:
+
+- logo.png
+- profile.jpg
+- auth-illustration.png
+- other UI images
