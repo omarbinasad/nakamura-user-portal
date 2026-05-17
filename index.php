@@ -18,7 +18,7 @@
                 <div class="login-form-side col-lg-6">
                 <div class="login-badge">
                     <i class="bi bi-person"></i>
-                    <span>Welcome back</span>
+                    <span>Welcome</span>
                 </div>
 
                 <h1>Sign in to access your trips</h1>
