@@ -280,6 +280,40 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// trip details tabs
+document.addEventListener("DOMContentLoaded", function () {
+  const tripTabs = document.querySelectorAll(".trip-tab");
+  const tripPanels = document.querySelectorAll(".trip-tab-panel");
+
+  if (!tripTabs.length) {
+    return;
+  }
+
+  tripTabs.forEach(function (tab) {
+    tab.addEventListener("click", function () {
+      const targetKey = this.getAttribute("data-trip-tab");
+
+      tripTabs.forEach(function (t) {
+        t.classList.remove("is-active");
+      });
+
+      tripPanels.forEach(function (p) {
+        p.classList.remove("is-active");
+      });
+
+      this.classList.add("is-active");
+
+      const targetPanel = document.querySelector(
+        '[data-trip-panel="' + targetKey + '"]'
+      );
+
+      if (targetPanel) {
+        targetPanel.classList.add("is-active");
+      }
+    });
+  });
+});
+
 // Trips sidebar popup toggle (<=1024px)
 document.addEventListener("DOMContentLoaded", function () {
   const sidebarToggle = document.getElementById("sidebarToggle");
