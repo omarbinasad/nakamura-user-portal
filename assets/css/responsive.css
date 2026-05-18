@@ -1505,3 +1505,154 @@
     font-size: 11px;
   }
 }
+
+/* =========================================
+   Support Chat Page - Responsive
+========================================= */
+
+@media (max-width: 767px) {
+  .support-chat-section {
+    padding: 20px 0 40px;
+  }
+
+  .support-chat-window {
+    min-height: calc(100vh - 200px);
+    border-radius: 14px;
+  }
+
+  .support-chat-header {
+    padding: 12px 14px;
+    gap: 10px;
+  }
+
+  .support-chat-title h2 {
+    font-size: 15px;
+  }
+
+  .support-chat-status {
+    font-size: 11px;
+  }
+
+  .support-chat-avatar {
+    width: 36px;
+    height: 36px;
+    font-size: 17px;
+  }
+
+  .support-chat-body {
+    padding: 18px 14px;
+    gap: 12px;
+  }
+
+  .support-chat-bubble {
+    max-width: 82%;
+    padding: 11px 14px;
+  }
+
+  .support-chat-bubble p,
+  .support-chat-bubble {
+    font-size: 13.5px;
+  }
+
+  .support-chat-footer {
+    padding: 12px 14px 14px;
+  }
+
+  .support-chat-attach,
+  .support-chat-send {
+    width: 40px;
+    height: 40px;
+  }
+
+  .support-chat-input {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .support-chat-reply-note {
+    font-size: 11px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .support-chat-section {
+    padding: 14px 0 30px;
+  }
+
+  .support-chat-window {
+    border-radius: 12px;
+    min-height: calc(100vh - 180px);
+  }
+
+  .support-chat-header {
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  .support-chat-back {
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+  }
+
+  .support-chat-avatar {
+    width: 32px;
+    height: 32px;
+    font-size: 15px;
+  }
+
+  .support-chat-title h2 {
+    font-size: 14px;
+  }
+
+  .support-chat-controls {
+    gap: 2px;
+  }
+
+  .support-chat-ctrl {
+    width: 28px;
+    height: 28px;
+    font-size: 15px;
+  }
+
+  .support-chat-body {
+    padding: 14px 12px;
+    gap: 10px;
+  }
+
+  .support-chat-bubble {
+    max-width: 85%;
+    padding: 10px 13px;
+    border-radius: 14px;
+  }
+
+  .support-chat-avatar-sm {
+    width: 28px;
+    height: 28px;
+    font-size: 13px;
+  }
+
+  .support-chat-bubble-inline {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .support-chat-from-user .support-chat-bubble-inline {
+    align-items: flex-end;
+  }
+
+  .support-chat-bubble-inline .support-chat-time {
+    align-self: flex-start;
+  }
+
+  .support-chat-from-user .support-chat-bubble-inline .support-chat-time {
+    align-self: flex-end;
+  }
+
+  .support-chat-day span {
+    font-size: 11px;
+    padding: 4px 12px;
+  }
+}

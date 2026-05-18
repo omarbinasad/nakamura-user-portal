@@ -342,7 +342,7 @@
                         <span>+91 98765 43210</span>
                     </a>
 
-                    <a href="#" class="trip-help-support-btn">Contact Support</a>
+                    <a href="support-chat.php" class="trip-help-support-btn">Contact Support</a>
                 </div>
 
             </aside>
