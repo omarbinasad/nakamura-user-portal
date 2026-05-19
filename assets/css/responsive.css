@@ -1666,3 +1666,551 @@
     padding: 4px 12px;
   }
 }
+
+/* =========================================
+   Passenger Details Tab - Responsive
+========================================= */
+
+@media (max-width: 1199px) {
+  .trip-pax-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    padding: 20px;
+  }
+
+  .trip-pax-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .trip-pax-grid .trip-pax-field {
+    padding: 14px 18px;
+  }
+
+  .trip-pax-grid .trip-pax-field:nth-child(4n + 1) {
+    padding-left: 18px;
+  }
+
+  .trip-pax-grid .trip-pax-field:nth-child(4n) {
+    padding-right: 18px;
+  }
+
+  .trip-pax-grid .trip-pax-field:nth-child(4n)::after {
+    display: block;
+  }
+
+  .trip-pax-grid .trip-pax-field:nth-child(3n + 1) {
+    padding-left: 0;
+  }
+
+  .trip-pax-grid .trip-pax-field:nth-child(3n) {
+    padding-right: 0;
+  }
+
+  .trip-pax-grid .trip-pax-field:nth-child(3n)::after {
+    display: none;
+  }
+
+  .trip-pax-grid .trip-pax-field:nth-child(-n+4) {
+    padding-top: 14px;
+  }
+
+  .trip-pax-grid .trip-pax-field:nth-child(-n+3) {
+    padding-top: 0;
+  }
+
+  .trip-pax-grid .trip-pax-field:nth-last-child(-n+3)::before {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .trip-pax-summary {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 18px;
+  }
+
+  .trip-pax-summary-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+
+  .trip-pax-summary-text span {
+    font-size: 12px;
+  }
+
+  .trip-pax-summary-text strong {
+    font-size: 14px;
+  }
+
+  .trip-pax-card {
+    padding: 20px 18px;
+    border-radius: 12px;
+    margin-bottom: 14px;
+  }
+
+  .trip-pax-card-head {
+    margin-bottom: 18px;
+    gap: 10px;
+  }
+
+  .trip-pax-number {
+    width: 28px;
+    height: 28px;
+    font-size: 13px;
+  }
+
+  .trip-pax-card-head h3 {
+    font-size: 16px;
+  }
+
+  .trip-pax-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .trip-pax-grid .trip-pax-field {
+    padding: 12px 16px;
+  }
+
+  .trip-pax-grid .trip-pax-field:nth-child(3n + 1) {
+    padding-left: 16px;
+  }
+
+  .trip-pax-grid .trip-pax-field:nth-child(3n) {
+    padding-right: 16px;
+  }
+
+  .trip-pax-grid .trip-pax-field:nth-child(3n)::after {
+    display: block;
+  }
+
+  .trip-pax-grid .trip-pax-field:nth-child(2n + 1) {
+    padding-left: 0;
+  }
+
+  .trip-pax-grid .trip-pax-field:nth-child(2n) {
+    padding-right: 0;
+  }
+
+  .trip-pax-grid .trip-pax-field:nth-child(2n)::after {
+    display: none;
+  }
+
+  .trip-pax-grid .trip-pax-field:nth-child(-n+4) {
+    padding-top: 12px;
+  }
+
+  .trip-pax-grid .trip-pax-field:nth-child(-n+2) {
+    padding-top: 0;
+  }
+
+  .trip-pax-grid .trip-pax-field:nth-last-child(-n+3) {
+    padding-bottom: 12px;
+  }
+
+  .trip-pax-grid .trip-pax-field:nth-last-child(-n+3)::before {
+    display: block;
+  }
+
+  .trip-pax-grid .trip-pax-field:last-child {
+    padding-bottom: 12px;
+  }
+
+  .trip-pax-grid .trip-pax-field:last-child::before {
+    display: none;
+  }
+
+  .trip-pax-label {
+    font-size: 13px;
+  }
+
+  .trip-pax-value {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .trip-pax-summary {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 16px;
+  }
+
+  .trip-pax-summary-item {
+    gap: 12px;
+  }
+
+  .trip-pax-summary-text strong {
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .trip-pax-card {
+    padding: 18px 16px;
+  }
+
+  .trip-pax-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .trip-pax-grid .trip-pax-field {
+    padding: 11px 14px;
+  }
+
+  .trip-pax-grid .trip-pax-field:nth-child(2n + 1) {
+    padding-left: 0;
+  }
+
+  .trip-pax-grid .trip-pax-field:nth-child(2n) {
+    padding-right: 0;
+  }
+
+  .trip-pax-grid .trip-pax-field:nth-last-child(-n+3) {
+    padding-bottom: 11px;
+  }
+
+  .trip-pax-grid .trip-pax-field:last-child {
+    padding-bottom: 11px;
+  }
+
+  .trip-pax-label {
+    font-size: 12px;
+  }
+
+  .trip-pax-value {
+    font-size: 13.5px;
+  }
+
+  .trip-pax-file {
+    padding: 7px 10px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  .trip-pax-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trip-pax-grid .trip-pax-field {
+    padding: 11px 0;
+  }
+
+  .trip-pax-grid .trip-pax-field::after {
+    display: none;
+  }
+
+  .trip-pax-grid .trip-pax-field:nth-child(-n+2) {
+    padding-top: 11px;
+  }
+
+  .trip-pax-grid .trip-pax-field:first-child {
+    padding-top: 0;
+  }
+
+  .trip-pax-grid .trip-pax-field:nth-last-child(-n+3) {
+    padding-bottom: 11px;
+  }
+
+  .trip-pax-grid .trip-pax-field:nth-last-child(-n+3)::before {
+    display: block;
+  }
+
+  .trip-pax-grid .trip-pax-field:last-child {
+    padding-bottom: 11px;
+  }
+
+  .trip-pax-grid .trip-pax-field:last-child::before {
+    display: none;
+  }
+}
+
+/* =========================================
+   Payment Details Tab - Responsive
+========================================= */
+
+@media (max-width: 1199px) {
+  .trip-payment {
+    gap: 28px;
+  }
+
+  .trip-payment-grid {
+    column-gap: 20px;
+    row-gap: 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  .trip-payment {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+
+  .trip-payment::before {
+    top: auto;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: 1px;
+    top: calc(50% - 14px);
+    transform: none;
+  }
+
+  .trip-payment-right {
+    padding-top: 4px;
+  }
+}
+
+@media (max-width: 767px) {
+  .trip-payment {
+    gap: 24px;
+  }
+
+  .trip-payment::before {
+    display: none;
+  }
+
+  .trip-payment-title {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+
+  .trip-payment-grid {
+    column-gap: 16px;
+    row-gap: 16px;
+  }
+
+  .trip-payment-fields {
+    gap: 18px;
+  }
+
+  .trip-payment-label {
+    font-size: 12px;
+  }
+
+  .trip-payment-value {
+    font-size: 14px;
+  }
+
+  .trip-payment-brand {
+    font-size: 22px;
+  }
+
+  .trip-payment-right {
+    padding-top: 16px;
+    border-top: 1px solid var(--color-border-light, #e8edf5);
+  }
+}
+
+@media (max-width: 480px) {
+  .trip-payment-grid {
+    grid-template-columns: 1fr;
+    row-gap: 14px;
+  }
+
+  .trip-payment-title {
+    font-size: 17px;
+    margin-bottom: 16px;
+  }
+}
+
+/* =========================================
+   Baggage Tab - Responsive
+========================================= */
+
+@media (max-width: 1199px) {
+  .trip-baggage-routes {
+    gap: 18px;
+  }
+
+  .trip-baggage-card {
+    padding: 16px 18px;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  .trip-baggage-routes {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .trip-baggage-title {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+
+  .trip-baggage-route-title {
+    font-size: 14px;
+  }
+
+  .trip-baggage-card {
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .trip-baggage-airline-head strong {
+    font-size: 13px;
+  }
+
+  .trip-baggage-item span {
+    font-size: 12px;
+  }
+
+  .trip-baggage-item strong {
+    font-size: 14px;
+  }
+
+  .trip-baggage-note {
+    padding: 12px 14px;
+    gap: 10px;
+  }
+
+  .trip-baggage-note strong {
+    font-size: 13px;
+  }
+
+  .trip-baggage-note p {
+    font-size: 12.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .trip-baggage-card {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .trip-baggage-airline + .trip-baggage-airline {
+    padding-top: 18px;
+    border-top: 1px dashed var(--color-border-light, #e8edf5);
+  }
+
+  .trip-baggage-title {
+    font-size: 17px;
+  }
+}
+
+/* =========================================
+   Cancellation Policy Tab - Responsive
+========================================= */
+
+@media (max-width: 991px) {
+  .trip-cancel-tiers {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .trip-cancel-list {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .trip-cancel-title {
+    font-size: 18px;
+  }
+
+  .trip-cancel-desc {
+    font-size: 13px;
+  }
+
+  .trip-cancel-tier {
+    padding: 16px 18px;
+    gap: 14px;
+  }
+
+  .trip-cancel-tier-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 17px;
+  }
+
+  .trip-cancel-tier-when strong {
+    font-size: 14px;
+  }
+
+  .trip-cancel-tier-when span {
+    font-size: 11.5px;
+  }
+
+  .trip-cancel-amount {
+    font-size: 24px;
+  }
+
+  .trip-cancel-tier-body p {
+    font-size: 13px;
+  }
+
+  .trip-cancel-section-title {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+
+  .trip-cancel-list li {
+    padding: 14px 16px;
+    gap: 12px;
+  }
+
+  .trip-cancel-list-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+
+  .trip-cancel-list strong {
+    font-size: 13.5px;
+  }
+
+  .trip-cancel-list p {
+    font-size: 12.5px;
+  }
+
+  .trip-cancel-note {
+    padding: 14px 16px;
+    gap: 10px;
+  }
+
+  .trip-cancel-note strong {
+    font-size: 13px;
+  }
+
+  .trip-cancel-note p {
+    font-size: 12.5px;
+  }
+
+  .trip-cancel-actions {
+    flex-direction: column;
+  }
+
+  .trip-cancel-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .trip-cancel-title {
+    font-size: 17px;
+  }
+
+  .trip-cancel-tier {
+    padding: 14px 16px;
+  }
+
+  .trip-cancel-amount {
+    font-size: 22px;
+  }
+
+  .trip-cancel-list li {
+    padding: 12px 14px;
+  }
+}

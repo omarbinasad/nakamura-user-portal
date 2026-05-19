@@ -103,7 +103,7 @@
         </div>
 
         <div class="login-info-card">
-            <div class="row g-3 align-items-stretch">
+            <div class="row g-3 align-items-stretch login-info-card-left">
                 <div class="login-steps col-lg">
                 <h4>How it works</h4>
 
