@@ -280,6 +280,43 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// support chat — scroll to latest message on load + on submit
+document.addEventListener("DOMContentLoaded", function () {
+  const chatBody = document.getElementById("supportChatBody");
+  const chatForm = document.getElementById("supportChatForm");
+  const chatInput = document.getElementById("supportChatInput");
+
+  if (!chatBody) {
+    return;
+  }
+
+  function scrollToBottom(smooth) {
+    chatBody.scrollTo({
+      top: chatBody.scrollHeight,
+      behavior: smooth ? "smooth" : "auto",
+    });
+  }
+
+  scrollToBottom(false);
+
+  if (chatForm && chatInput) {
+    chatForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      const value = chatInput.value.trim();
+
+      if (!value) {
+        return;
+      }
+
+      chatInput.value = "";
+
+      requestAnimationFrame(function () {
+        scrollToBottom(true);
+      });
+    });
+  }
+});
+
 // trip details tabs
 document.addEventListener("DOMContentLoaded", function () {
   const tripTabs = document.querySelectorAll(".trip-tab");

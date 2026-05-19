@@ -148,7 +148,9 @@
 
                             <div class="trip-airline-row">
                                 <span class="trip-airline-badge">
-                                    <span class="trip-airline-logo ba-logo">BA</span>
+                                     <span class="trip-airline-logo emirates-logo">
+                                        <img src="assets/images/ba-Logo.png" alt="British Airways">
+                                    </span>
                                     British Airways
                                 </span>
 
@@ -226,7 +228,9 @@
 
                             <div class="trip-airline-row">
                                 <span class="trip-airline-badge">
-                                    <span class="trip-airline-logo sq-logo">SQ</span>
+                                    <span class="trip-airline-logo emirates-logo">
+                                        <img src="assets/images/sq-Logo.png" alt="Singapore Airlines">
+                                    </span>
                                     Singapore Airlines
                                 </span>
 

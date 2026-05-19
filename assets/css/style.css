@@ -2570,7 +2570,7 @@ button.profile-avatar-camera {
 }
 
 .trip-date-row i {
-  color: var(--color-text, #63708a);
+  color: var(--color-primary);
   font-size: 15px;
 }
 
@@ -2604,8 +2604,8 @@ button.profile-avatar-camera {
 }
 
 .trip-airline-logo {
-  width: 28px;
-  height: 18px;
+  width: 35px;
+  height: 28px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2764,7 +2764,7 @@ button.profile-avatar-camera {
   padding: 0;
   list-style: none;
   display: grid;
-  gap: 8px;
+  gap: 5px;
 }
 
 .trips-account-menu a {
@@ -2796,7 +2796,7 @@ button.profile-avatar-camera {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .trips-side-title-icon i {
@@ -2813,7 +2813,7 @@ button.profile-avatar-camera {
 }
 
 .trips-help-text {
-  margin: 0 0 22px;
+  margin: 0 0 12px;
   padding-left: 40px;
   color: var(--color-text, #63708a);
   font-size: 13px;
@@ -2822,7 +2822,7 @@ button.profile-avatar-camera {
 }
 
 .trips-contact-line {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
   gap: 14px;
@@ -3564,7 +3564,7 @@ button.profile-avatar-camera {
 .trip-segment .trip-segment-marker::before {
   content: "";
   position: absolute;
-  top: 32px;
+  top: 42px;
   bottom: -16px;
   left: 50%;
   width: 2px;
@@ -3750,7 +3750,7 @@ button.profile-avatar-camera {
 }
 
 .support-chat-window {
-  max-width: 560px;
+  max-width: 660px;
   margin: 0 auto;
   background: var(--color-white, #ffffff);
   border: 1px solid var(--color-border-light, #e8edf5);
@@ -3759,7 +3759,9 @@ button.profile-avatar-camera {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 640px;
+  height: 720px;
+  max-height: calc(100vh - 180px);
+  min-height: 520px;
 }
 
 /* Header */
@@ -3872,12 +3874,34 @@ button.profile-avatar-camera {
 
 .support-chat-body {
   flex: 1;
+  min-height: 0;
   padding: 22px 20px;
   display: flex;
   flex-direction: column;
   gap: 14px;
   overflow-y: auto;
+  overscroll-behavior: contain;
   background: var(--color-white, #ffffff);
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border, #dfe7f2) transparent;
+}
+
+.support-chat-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.support-chat-body::-webkit-scrollbar-track {
+  background: transparent;
+  margin: 8px 0;
+}
+
+.support-chat-body::-webkit-scrollbar-thumb {
+  background: var(--color-border, #dfe7f2);
+  border-radius: 3px;
+}
+
+.support-chat-body::-webkit-scrollbar-thumb:hover {
+  background: var(--color-light-text, #8a93a8);
 }
 
 .support-chat-day {
@@ -3940,8 +3964,8 @@ button.profile-avatar-camera {
 }
 
 .support-chat-from-user .support-chat-bubble {
-  background: var(--color-primary-light, #f8eaff);
-  color: var(--color-heading, #071431);
+  background: var(--gradient-primary);
+  color: var(--color-white);
   border-bottom-right-radius: 6px;
 }
 
@@ -3959,7 +3983,7 @@ button.profile-avatar-camera {
 
 .support-chat-time {
   font-size: 11px;
-  color: var(--color-muted, #6c7890);
+  color: #9a9ca8;
   font-weight: var(--fw-medium, 500);
   display: inline-flex;
   align-items: center;
@@ -3972,7 +3996,7 @@ button.profile-avatar-camera {
 
 .support-chat-from-user .support-chat-time i {
   font-size: 14px;
-  color: var(--color-primary, #8f5abe);
+  color: #c7b7d6;
 }
 
 /* Inline-time bubble variant (short messages where time sits beside text) */
