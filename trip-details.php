@@ -121,7 +121,8 @@
                                                     <span class="trip-time-label">Depart</span>
                                                     <strong class="trip-time-value">11:15</strong>
                                                     <span class="trip-time-date">03 June Wed</span>
-                                                    <p class="trip-time-airport">Chhatrapati Shivaji Maharaj International Airport</p>
+                                                    <p class="trip-time-airport"><strong>BOM</strong><br>Mumbai International Airport
+</p>
                                                 </div>
 
                                                 <div class="trip-time-duration">

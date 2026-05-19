@@ -422,6 +422,10 @@
   .otp-info-card {
     padding: 8px 18px;
   }
+  .trip-transit-line-right {
+    min-width: auto;
+    display: none;
+  }
 }
 
 @media (max-width: 360px) {
@@ -1178,7 +1182,7 @@
   .trip-extra-item > i {
     width: 44px;
     height: 44px;
-    border-radius: 11px;
+    border-radius: 6px;
     font-size: 18px;
     background: transparent;
     border: 1.5px solid var(--color-primary, #8f5abe);
@@ -1196,7 +1200,7 @@
   /* Transit card */
   .trip-transit {
     padding-left: 50px;
-    margin: 18px 0;
+    margin: 28px 0;
     gap: 10px;
     align-items: center;
   }
@@ -1208,12 +1212,12 @@
   .trip-transit-card {
     flex: 1;
     flex-wrap: wrap;
-    gap: 12px 16px;
+    gap: 2px;
     padding: 14px 18px;
   }
 
   .trip-transit-info strong {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .trip-transit-info span {
@@ -1225,11 +1229,7 @@
   }
 
   .trip-transit-layover {
-    font-size: 15px;
-  }
-
-  .trip-transit-layover strong {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   /* Price summary card */
@@ -1350,8 +1350,8 @@
   }
 
   .trip-segment-number {
-    width: 28px;
-    height: 28px;
+    width: 22px;
+    height: 22px;
     font-size: 13px;
   }
 
@@ -1389,8 +1389,8 @@
   }
 
   .trip-extra-item > i {
-    width: 38px;
-    height: 38px;
+    width: 30px;
+    height: 30px;
     font-size: 16px;
   }
 
@@ -1403,7 +1403,7 @@
   }
 
   .trip-transit {
-    padding-left: 0;
+    padding-left: 40px;
     gap: 0;
     grid-template-columns: 32px minmax(0, 1fr);
   }
@@ -1417,12 +1417,14 @@
   }
 
   .trip-transit-card {
+    text-align: center;
+    flex-direction: column;
     flex: 1;
-    padding: 12px 14px;
+    padding: 5px;
   }
 
   .trip-transit-info strong {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .trip-transit-info span {

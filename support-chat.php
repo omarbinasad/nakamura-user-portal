@@ -37,13 +37,13 @@
                         <i class="bi bi-three-dots-vertical"></i>
                     </button>
 
-                    <button type="button" class="support-chat-ctrl" aria-label="Minimize">
+                    <!-- <button type="button" class="support-chat-ctrl" aria-label="Minimize">
                         <i class="bi bi-dash-lg"></i>
                     </button>
 
                     <button type="button" class="support-chat-ctrl" aria-label="Close">
                         <i class="bi bi-x-lg"></i>
-                    </button>
+                    </button> -->
                 </div>
             </header>
 
