@@ -821,19 +821,19 @@
 
                     <div class="trip-price-row">
                         <span>Base fare (2 Adults)</span>
-                        <strong>&#8377; 3,20,000</strong>
+                        <strong>&yen; 3,20,000</strong>
                     </div>
 
                     <div class="trip-price-row">
                         <span>Taxes &amp; fees</span>
-                        <strong>&#8377; 73,250</strong>
+                        <strong>&yen; 73,250</strong>
                     </div>
 
                     <div class="trip-price-divider"></div>
 
                     <div class="trip-price-total">
                         <span>Total paid</span>
-                        <strong>&#8377; 3,93,250</strong>
+                        <strong>&yen; 3,93,250</strong>
                     </div>
                 </div>
 

@@ -121,9 +121,9 @@
 
             <footer class="support-chat-footer">
                 <form action="#" method="post" class="support-chat-form" id="supportChatForm">
-                    <button type="button" class="support-chat-attach" aria-label="Attach file">
+                    <!-- <button type="button" class="support-chat-attach" aria-label="Attach file">
                         <i class="bi bi-paperclip"></i>
-                    </button>
+                    </button> -->
 
                     <input
                         type="text"
