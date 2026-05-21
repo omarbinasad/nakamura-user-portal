@@ -16,7 +16,7 @@
         <div class="support-chat-window">
 
             <header class="support-chat-header">
-                <a href="trip-details.php" class="support-chat-back" aria-label="Back">
+                <a href="bookings.php" class="support-chat-back" aria-label="Back">
                     <i class="bi bi-chevron-left"></i>
                 </a>
 

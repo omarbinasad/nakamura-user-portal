@@ -2984,6 +2984,16 @@ button.profile-avatar-camera {
   color: #1aa260;
 }
 
+.status-upcoming-pill {
+  background: #e6f1ff;
+  color: #1d6fdc;
+}
+
+.status-request-pill {
+  background: #fff5e0;
+  color: #c47a00;
+}
+
 .trip-details-meta-row {
   display: flex;
   align-items: center;
@@ -3557,12 +3567,59 @@ button.profile-avatar-camera {
   font-weight: var(--fw-semibold, 600);
 }
 
-/* Connecting line between segments */
+/* Section dividers (round trip Outbound/Return, multi-city Flight 1/2/3) */
 
-.trip-segment + .trip-transit + .trip-segment .trip-segment-marker::before,
-.trip-segment + .trip-transit .trip-segment-marker::before {
-  /* display: none; */
+.trip-section-divider {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding-bottom: 14px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid var(--color-border-light, #e8edf5);
 }
+
+.trip-itinerary > .trip-section-divider:not(:first-child) {
+  margin-top: 28px;
+}
+
+.trip-section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: var(--fw-bold, 700);
+  line-height: 1;
+}
+
+.trip-section-label i {
+  font-size: 14px;
+}
+
+.trip-section-label-outbound {
+  background: #e6f1ff;
+  color: #1d6fdc;
+}
+
+.trip-section-label-return {
+  background: var(--color-primary-light, #f8eaff);
+  color: var(--color-primary-dark, #53259e);
+}
+
+.trip-section-label-multi {
+  background: var(--color-primary-light, #f8eaff);
+  color: var(--color-primary-dark, #53259e);
+}
+
+.trip-section-date {
+  font-size: 14px;
+  color: var(--color-muted, #6c7890);
+  font-weight: var(--fw-medium, 500);
+}
+
+/* Connecting line between segments */
 
 .trip-segment .trip-segment-marker::before {
   content: "";

@@ -1085,6 +1085,25 @@
     padding: 24px 18px;
   }
 
+  .trip-section-divider {
+    gap: 10px;
+    padding-bottom: 12px;
+    margin-bottom: 18px;
+  }
+
+  .trip-itinerary > .trip-section-divider:not(:first-child) {
+    margin-top: 22px;
+  }
+
+  .trip-section-label {
+    font-size: 12px;
+    padding: 5px 12px;
+  }
+
+  .trip-section-date {
+    font-size: 13px;
+  }
+
   /* Segments */
   .trip-segment {
     grid-template-columns: 36px minmax(0, 1fr);

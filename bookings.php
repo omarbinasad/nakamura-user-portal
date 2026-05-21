@@ -117,7 +117,7 @@
                         <div class="trip-action-block">
                             <span class="trip-status-badge status-request">On Request</span>
 
-                            <a href="trip-details.php" class="trip-action-btn">
+                            <a href="trip-details-multicity.php" class="trip-action-btn">
                                 View details
                                 <i class="bi bi-chevron-right"></i>
                             </a>
@@ -197,7 +197,7 @@
                         <div class="trip-action-block">
                             <span class="trip-status-badge status-upcoming">Upcoming</span>
 
-                            <a href="trip-details.php" class="trip-action-btn">
+                            <a href="trip-details-roundtrip.php" class="trip-action-btn">
                                 View details
                                 <i class="bi bi-chevron-right"></i>
                             </a>
@@ -277,7 +277,7 @@
                         <div class="trip-action-block">
                             <span class="trip-status-badge status-completed">Completed</span>
 
-                            <a href="trip-details.php" class="trip-action-btn">
+                            <a href="trip-details-oneway.php" class="trip-action-btn">
                                 View details
                                 <i class="bi bi-chevron-right"></i>
                             </a>
