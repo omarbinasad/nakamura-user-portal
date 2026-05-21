@@ -1,5 +1,7 @@
 <div class="trip-itinerary">
 
+    <div class="trip-flight-card">
+
     <div class="trip-section-divider">
         <span class="trip-section-label trip-section-label-multi">
             <i class="bi bi-airplane-fill"></i>
@@ -87,6 +89,10 @@
             </div>
         </div>
     </article>
+
+    </div>
+
+    <div class="trip-flight-card">
 
     <div class="trip-section-divider">
         <span class="trip-section-label trip-section-label-multi">
@@ -276,6 +282,10 @@
         </div>
     </article>
 
+    </div>
+
+    <div class="trip-flight-card">
+
     <div class="trip-section-divider">
         <span class="trip-section-label trip-section-label-multi">
             <i class="bi bi-airplane-fill"></i>
@@ -363,5 +373,7 @@
             </div>
         </div>
     </article>
+
+    </div>
 
 </div>

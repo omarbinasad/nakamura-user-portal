@@ -1085,6 +1085,23 @@
     padding: 24px 18px;
   }
 
+  .trip-tab-panel[data-trip-panel="itinerary"] {
+    padding: 0;
+  }
+
+  .trip-flight-card {
+    padding: 22px 18px;
+    border-radius: 14px;
+  }
+
+  .trip-itinerary {
+    gap: 14px;
+  }
+
+  .trip-details-card {
+    gap: 14px;
+  }
+
   .trip-section-divider {
     gap: 10px;
     padding-bottom: 12px;
@@ -1365,6 +1382,14 @@
 
   .trip-tab-panel {
     padding: 22px 16px;
+  }
+
+  .trip-tab-panel[data-trip-panel="itinerary"] {
+    padding: 0;
+  }
+
+  .trip-flight-card {
+    padding: 20px 16px;
   }
 
   .trip-segment {

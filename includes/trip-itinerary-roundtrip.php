@@ -1,5 +1,7 @@
 <div class="trip-itinerary">
 
+    <div class="trip-flight-card">
+
     <div class="trip-section-divider">
         <span class="trip-section-label trip-section-label-outbound">
             <i class="bi bi-arrow-right-circle-fill"></i>
@@ -188,6 +190,10 @@
         </div>
     </article>
 
+    </div>
+
+    <div class="trip-flight-card">
+
     <div class="trip-section-divider trip-section-divider-return">
         <span class="trip-section-label trip-section-label-return">
             <i class="bi bi-arrow-left-circle-fill"></i>
@@ -375,5 +381,7 @@
             </div>
         </div>
     </article>
+
+    </div>
 
 </div>

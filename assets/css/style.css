@@ -3148,10 +3148,12 @@ button.profile-avatar-camera {
 /* Tabs card */
 
 .trip-details-card {
-  background: var(--color-white, #ffffff);
-  border: 1px solid var(--color-border-light, #e8edf5);
-  border-radius: 18px;
-  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.03);
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .trip-details-tabs {
@@ -3161,7 +3163,10 @@ button.profile-avatar-camera {
   list-style: none;
   margin: 0;
   padding: 8px 24px 0;
-  border-bottom: 1px solid var(--color-border-light, #e8edf5);
+  background: var(--color-white, #ffffff);
+  border: 1px solid var(--color-border-light, #e8edf5);
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.03);
   overflow-x: auto;
   scrollbar-width: none;
 }
@@ -3204,11 +3209,30 @@ button.profile-avatar-camera {
 
 .trip-tab-panel {
   display: none;
-  padding: 30px;
+  padding: 28px;
+  background: var(--color-white, #ffffff);
+  border: 1px solid var(--color-border-light, #e8edf5);
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.03);
 }
 
 .trip-tab-panel.is-active {
   display: block;
+}
+
+.trip-tab-panel[data-trip-panel="itinerary"] {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.trip-flight-card {
+  background: var(--color-white, #ffffff);
+  border: 1px solid var(--color-border-light, #e8edf5);
+  border-radius: 16px;
+  padding: 26px 28px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.03);
 }
 
 .trip-tab-empty {
@@ -3223,6 +3247,9 @@ button.profile-avatar-camera {
 
 .trip-itinerary {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .trip-segment {

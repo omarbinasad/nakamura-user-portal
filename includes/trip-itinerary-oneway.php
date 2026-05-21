@@ -1,5 +1,7 @@
 <div class="trip-itinerary">
 
+    <div class="trip-flight-card">
+
     <article class="trip-segment">
         <div class="trip-segment-marker">
             <span class="trip-segment-number">1</span>
@@ -179,5 +181,7 @@
             </div>
         </div>
     </article>
+
+    </div>
 
 </div>
