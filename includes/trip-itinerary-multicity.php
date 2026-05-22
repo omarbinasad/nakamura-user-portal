@@ -7,6 +7,7 @@
             <i class="bi bi-airplane-fill"></i>
             Flight 1
         </span>
+        <span class="trip-section-route">Mumbai <i class="bi bi-arrow-right"></i> Dubai</span>
         <span class="trip-section-date">03 June 2026, Wednesday</span>
     </div>
 
@@ -99,6 +100,7 @@
             <i class="bi bi-airplane-fill"></i>
             Flight 2
         </span>
+        <span class="trip-section-route">Dubai <i class="bi bi-arrow-right"></i> Paris</span>
         <span class="trip-section-date">07 June 2026, Sunday</span>
     </div>
 
@@ -291,6 +293,7 @@
             <i class="bi bi-airplane-fill"></i>
             Flight 3
         </span>
+        <span class="trip-section-route">Paris <i class="bi bi-arrow-right"></i> Mumbai</span>
         <span class="trip-section-date">14 June 2026, Sunday</span>
     </div>
 

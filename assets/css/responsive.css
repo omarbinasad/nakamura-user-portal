@@ -1112,6 +1112,34 @@
     margin-top: 22px;
   }
 
+  /* Flight cards collapse into an accordion */
+  .trip-flight-toggle {
+    cursor: pointer;
+  }
+
+  .trip-flight-caret {
+    display: inline-flex;
+    align-items: center;
+    margin-left: auto;
+    font-size: 13px;
+    color: var(--color-primary, #8f5abe);
+    transition: transform 0.2s ease;
+  }
+
+  .trip-flight-card:not(.is-collapsed) .trip-flight-caret {
+    transform: rotate(180deg);
+  }
+
+  .trip-flight-card.is-collapsed > *:not(.trip-section-divider) {
+    display: none;
+  }
+
+  .trip-flight-card.is-collapsed .trip-section-divider {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
   .trip-section-label {
     font-size: 12px;
     padding: 5px 12px;

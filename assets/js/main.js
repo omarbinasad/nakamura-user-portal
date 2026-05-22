@@ -351,6 +351,47 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Itinerary flight accordion (collapsible flight cards on mobile)
+document.addEventListener("DOMContentLoaded", function () {
+  const flightCards = document.querySelectorAll(
+    ".trip-itinerary > .trip-flight-card"
+  );
+
+  flightCards.forEach(function (card, index) {
+    const divider = card.querySelector(".trip-section-divider");
+
+    // One-way trips have a single flight card with no divider header
+    if (!divider) {
+      return;
+    }
+
+    divider.classList.add("trip-flight-toggle");
+    divider.setAttribute("role", "button");
+    divider.setAttribute("tabindex", "0");
+
+    const caret = document.createElement("i");
+    caret.className = "bi bi-chevron-down trip-flight-caret";
+    divider.appendChild(caret);
+
+    // Keep the first flight open, collapse the rest by default
+    if (index > 0) {
+      card.classList.add("is-collapsed");
+    }
+
+    function toggle() {
+      card.classList.toggle("is-collapsed");
+    }
+
+    divider.addEventListener("click", toggle);
+    divider.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        toggle();
+      }
+    });
+  });
+});
+
 // Trips sidebar popup toggle (<=1024px)
 document.addEventListener("DOMContentLoaded", function () {
   const sidebarToggle = document.getElementById("sidebarToggle");

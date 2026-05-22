@@ -678,6 +678,18 @@
                     <a href="support-chat.php" class="trip-help-support-btn">Contact Support</a>
                 </div>
 
+                <div class="trip-side-actions">
+                    <a href="change-booking.php" class="trip-manage-btn trip-manage-change">
+                        <i class="bi bi-pencil-square"></i>
+                        <span>Change Booking</span>
+                    </a>
+
+                    <a href="cancel-booking.php" class="trip-manage-btn trip-manage-cancel">
+                        <i class="bi bi-x-circle"></i>
+                        <span>Cancel Booking</span>
+                    </a>
+                </div>
+
             </aside>
 
         </div>

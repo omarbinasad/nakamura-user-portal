@@ -7,6 +7,7 @@
             <i class="bi bi-arrow-right-circle-fill"></i>
             Outbound
         </span>
+        <span class="trip-section-route">Delhi <i class="bi bi-arrow-right"></i> London</span>
         <span class="trip-section-date">21 July 2026, Tuesday</span>
     </div>
 
@@ -199,6 +200,7 @@
             <i class="bi bi-arrow-left-circle-fill"></i>
             Return
         </span>
+        <span class="trip-section-route">London <i class="bi bi-arrow-right"></i> Delhi</span>
         <span class="trip-section-date">30 July 2026, Thursday</span>
     </div>
 

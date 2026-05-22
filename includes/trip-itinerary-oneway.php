@@ -2,6 +2,15 @@
 
     <div class="trip-flight-card">
 
+    <div class="trip-section-divider">
+        <span class="trip-section-label trip-section-label-multi">
+            <i class="bi bi-airplane-fill"></i>
+            Flight
+        </span>
+        <span class="trip-section-route">Mumbai <i class="bi bi-arrow-right"></i> Paris</span>
+        <span class="trip-section-date">03 June 2026, Wednesday</span>
+    </div>
+
     <article class="trip-segment">
         <div class="trip-segment-marker">
             <span class="trip-segment-number">1</span>
