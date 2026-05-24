@@ -280,6 +280,118 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// support chat — scroll to latest message on load + on submit
+document.addEventListener("DOMContentLoaded", function () {
+  const chatBody = document.getElementById("supportChatBody");
+  const chatForm = document.getElementById("supportChatForm");
+  const chatInput = document.getElementById("supportChatInput");
+
+  if (!chatBody) {
+    return;
+  }
+
+  function scrollToBottom(smooth) {
+    chatBody.scrollTo({
+      top: chatBody.scrollHeight,
+      behavior: smooth ? "smooth" : "auto",
+    });
+  }
+
+  scrollToBottom(false);
+
+  if (chatForm && chatInput) {
+    chatForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      const value = chatInput.value.trim();
+
+      if (!value) {
+        return;
+      }
+
+      chatInput.value = "";
+
+      requestAnimationFrame(function () {
+        scrollToBottom(true);
+      });
+    });
+  }
+});
+
+// trip details tabs
+document.addEventListener("DOMContentLoaded", function () {
+  const tripTabs = document.querySelectorAll(".trip-tab");
+  const tripPanels = document.querySelectorAll(".trip-tab-panel");
+
+  if (!tripTabs.length) {
+    return;
+  }
+
+  tripTabs.forEach(function (tab) {
+    tab.addEventListener("click", function () {
+      const targetKey = this.getAttribute("data-trip-tab");
+
+      tripTabs.forEach(function (t) {
+        t.classList.remove("is-active");
+      });
+
+      tripPanels.forEach(function (p) {
+        p.classList.remove("is-active");
+      });
+
+      this.classList.add("is-active");
+
+      const targetPanel = document.querySelector(
+        '[data-trip-panel="' + targetKey + '"]'
+      );
+
+      if (targetPanel) {
+        targetPanel.classList.add("is-active");
+      }
+    });
+  });
+});
+
+// Itinerary flight accordion (collapsible flight cards on mobile)
+document.addEventListener("DOMContentLoaded", function () {
+  const flightCards = document.querySelectorAll(
+    ".trip-itinerary > .trip-flight-card"
+  );
+
+  flightCards.forEach(function (card, index) {
+    const divider = card.querySelector(".trip-section-divider");
+
+    // One-way trips have a single flight card with no divider header
+    if (!divider) {
+      return;
+    }
+
+    divider.classList.add("trip-flight-toggle");
+    divider.setAttribute("role", "button");
+    divider.setAttribute("tabindex", "0");
+
+    const caret = document.createElement("i");
+    caret.className = "bi bi-chevron-down trip-flight-caret";
+    divider.appendChild(caret);
+
+    // Keep the first flight open, collapse the rest by default
+    if (index > 0) {
+      card.classList.add("is-collapsed");
+    }
+
+    function toggle() {
+      card.classList.toggle("is-collapsed");
+    }
+
+    divider.addEventListener("click", toggle);
+    divider.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        toggle();
+      }
+    });
+  });
+});
+
 // Trips sidebar popup toggle (<=1024px)
 document.addEventListener("DOMContentLoaded", function () {
   const sidebarToggle = document.getElementById("sidebarToggle");

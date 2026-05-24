@@ -63,12 +63,14 @@
 
                                 <span class="trip-dot"></span>
 
-                                <span>12 days</span>
+                                <!-- <span>12 days</span> -->
                             </div>
 
                             <div class="trip-airline-row">
                                 <span class="trip-airline-badge">
-                                    <span class="trip-airline-logo emirates-logo">E</span>
+                                    <span class="trip-airline-logo emirates-logo">
+                                        <img src="assets/images/Emirates-Logo.png" alt="Emirates">
+                                    </span>
                                     Emirates
                                 </span>
 
@@ -115,15 +117,15 @@
                         <div class="trip-action-block">
                             <span class="trip-status-badge status-request">On Request</span>
 
-                            <a href="#" class="trip-action-btn">
+                            <a href="trip-details-multicity.php" class="trip-action-btn">
                                 View details
                                 <i class="bi bi-chevron-right"></i>
                             </a>
 
-                            <a href="#" class="trip-action-btn">
+                            <!-- <a href="#" class="trip-action-btn">
                                 <i class="bi bi-download"></i>
                                 Download invoice
-                            </a>
+                            </a> -->
                         </div>
                     </article>
 
@@ -141,12 +143,14 @@
 
                                 <span class="trip-dot"></span>
 
-                                <span>10 days</span>
+                                <!-- <span>10 days</span> -->
                             </div>
 
                             <div class="trip-airline-row">
                                 <span class="trip-airline-badge">
-                                    <span class="trip-airline-logo ba-logo">BA</span>
+                                     <span class="trip-airline-logo emirates-logo">
+                                        <img src="assets/images/ba-Logo.png" alt="British Airways">
+                                    </span>
                                     British Airways
                                 </span>
 
@@ -193,15 +197,15 @@
                         <div class="trip-action-block">
                             <span class="trip-status-badge status-upcoming">Upcoming</span>
 
-                            <a href="#" class="trip-action-btn">
+                            <a href="trip-details-roundtrip.php" class="trip-action-btn">
                                 View details
                                 <i class="bi bi-chevron-right"></i>
                             </a>
 
-                            <a href="#" class="trip-action-btn">
+                            <!-- <a href="#" class="trip-action-btn">
                                 <i class="bi bi-download"></i>
                                 Download invoice
-                            </a>
+                            </a> -->
                         </div>
                     </article>
 
@@ -219,12 +223,14 @@
 
                                 <span class="trip-dot"></span>
 
-                                <span>1 day</span>
+                                <!-- <span>1 day</span> -->
                             </div>
 
                             <div class="trip-airline-row">
                                 <span class="trip-airline-badge">
-                                    <span class="trip-airline-logo sq-logo">SQ</span>
+                                    <span class="trip-airline-logo emirates-logo">
+                                        <img src="assets/images/sq-Logo.png" alt="Singapore Airlines">
+                                    </span>
                                     Singapore Airlines
                                 </span>
 
@@ -271,15 +277,15 @@
                         <div class="trip-action-block">
                             <span class="trip-status-badge status-completed">Completed</span>
 
-                            <a href="#" class="trip-action-btn">
+                            <a href="trip-details-oneway.php" class="trip-action-btn">
                                 View details
                                 <i class="bi bi-chevron-right"></i>
                             </a>
 
-                            <a href="#" class="trip-action-btn">
+                            <!-- <a href="#" class="trip-action-btn">
                                 <i class="bi bi-download"></i>
                                 Download invoice
-                            </a>
+                            </a> -->
                         </div>
                     </article>
 
