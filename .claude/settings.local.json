@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(node --check \"d:/laragon/www/nakamura-passenger-portal-theme/assets/js/main.js\")"
+      "Bash(node --check \"d:/laragon/www/nakamura-passenger-portal-theme/assets/js/main.js\")",
+      "Bash(\"/e/xampp/php/php.exe\" -l e:/xampp/htdocs/nakamura-user-portal/change-booking.php)"
     ]
   }
 }

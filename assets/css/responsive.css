@@ -2286,3 +2286,15 @@
     padding: 12px 14px;
   }
 }
+
+/* Change Booking page – stack date pickers on small screens */
+@media (max-width: 767px) {
+  .manage-change-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .manage-search-btn {
+    width: 100%;
+  }
+}

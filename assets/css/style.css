@@ -5481,3 +5481,422 @@ textarea.manage-control {
   flex-shrink: 0;
   margin-top: 1px;
 }
+
+/* =========================================
+   Change Booking page (redesigned)
+========================================= */
+
+/* Right-aligned link in a card header */
+
+.manage-card-link {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13.5px;
+  font-weight: var(--fw-semibold, 600);
+  color: var(--color-primary-dark, #53259e);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.manage-card-link i {
+  font-size: 14px;
+}
+
+.manage-card-link:hover {
+  color: var(--color-primary, #8f5abe);
+  text-decoration: underline;
+}
+
+/* Numbered sections inside a card */
+
+.manage-section + .manage-section {
+  margin-top: 22px;
+  padding-top: 22px;
+  border-top: 1px solid var(--color-border-light, #e8edf5);
+}
+
+.manage-section-title {
+  margin: 0 0 14px;
+  font-size: 16px;
+  font-weight: var(--fw-bold, 700);
+  color: var(--color-heading, #071431);
+}
+
+/* Passenger name above segment list */
+
+.manage-pax-name {
+  font-size: 13px;
+  font-weight: var(--fw-bold, 700);
+  color: var(--color-heading, #071431);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin: 0 0 12px;
+}
+
+/* Segment checkbox cards */
+
+.manage-seg-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.manage-seg-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1.5px solid var(--color-border, #dfe7f2);
+  border-radius: 10px;
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+.manage-seg-item:hover {
+  border-color: var(--color-primary, #8f5abe);
+  background: var(--color-primary-light, #f8eaff);
+}
+
+.manage-seg-item input {
+  margin-top: 2px;
+  width: 17px;
+  height: 17px;
+  accent-color: var(--color-primary, #8f5abe);
+  flex-shrink: 0;
+}
+
+.manage-seg-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.manage-seg-route {
+  font-size: 14px;
+  font-weight: var(--fw-semibold, 600);
+  color: var(--color-heading, #071431);
+}
+
+.manage-seg-time {
+  font-size: 12.5px;
+  color: var(--color-muted, #6c7890);
+}
+
+/* Per-segment date picker row */
+
+.manage-change-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 12px;
+  align-items: end;
+}
+
+.manage-change-row + .manage-change-row {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--color-border-light, #e8edf5);
+}
+
+.manage-change-route {
+  display: block;
+  font-size: 13px;
+  font-weight: var(--fw-semibold, 600);
+  color: var(--color-muted, #6c7890);
+  margin-bottom: 6px;
+}
+
+.manage-date-input {
+  width: 100%;
+  padding: 11px 40px 11px 14px;
+  border: 1.5px solid var(--color-border, #dfe7f2);
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--color-text, #35405f);
+  background-color: var(--color-white, #ffffff);
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%2353259e' viewBox='0 0 16 16'%3E%3Cpath d='M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  transition: border-color 0.15s ease;
+  cursor: pointer;
+}
+
+.manage-date-input:focus {
+  outline: none;
+  border-color: var(--color-primary, #8f5abe);
+}
+
+.manage-date-input:disabled {
+  background-color: var(--color-body, #f8faff);
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%238a93a8' viewBox='0 0 16 16'%3E%3Cpath d='M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z'/%3E%3C/svg%3E");
+  color: var(--color-light-text, #8a93a8);
+  border-color: var(--color-border-light, #e8edf5);
+  cursor: not-allowed;
+}
+
+/* Flatpickr calendar — themed to match our design system */
+
+.flatpickr-calendar {
+  border-radius: 14px;
+  border: 1px solid var(--color-border-light, #e8edf5);
+  box-shadow: var(--shadow-md, 0 14px 35px rgba(16, 38, 72, 0.12));
+  font-family: var(--font-main, "Inter", sans-serif);
+  padding: 6px;
+}
+
+.flatpickr-calendar.arrowTop:before,
+.flatpickr-calendar.arrowTop:after,
+.flatpickr-calendar.arrowBottom:before,
+.flatpickr-calendar.arrowBottom:after {
+  display: none;
+}
+
+.flatpickr-months {
+  padding: 8px 4px 6px;
+}
+
+.flatpickr-months .flatpickr-month {
+  height: 38px;
+  color: var(--color-heading, #071431);
+}
+
+.flatpickr-current-month {
+  font-size: 15px;
+  font-weight: var(--fw-semibold, 600);
+  color: var(--color-heading, #071431);
+  padding-top: 6px;
+}
+
+.flatpickr-current-month .flatpickr-monthDropdown-months {
+  font-weight: var(--fw-semibold, 600);
+}
+
+.flatpickr-current-month input.cur-year {
+  color: var(--color-heading, #071431);
+  font-weight: var(--fw-semibold, 600);
+}
+
+.flatpickr-months .flatpickr-prev-month,
+.flatpickr-months .flatpickr-next-month {
+  padding: 8px;
+  color: var(--color-primary-dark, #53259e);
+  fill: var(--color-primary-dark, #53259e);
+}
+
+.flatpickr-months .flatpickr-prev-month svg,
+.flatpickr-months .flatpickr-next-month svg {
+  fill: var(--color-primary-dark, #53259e);
+}
+
+.flatpickr-months .flatpickr-prev-month:hover svg,
+.flatpickr-months .flatpickr-next-month:hover svg {
+  fill: var(--color-primary, #8f5abe);
+}
+
+.flatpickr-weekdays {
+  background: transparent;
+  padding: 4px 0;
+}
+
+span.flatpickr-weekday {
+  color: var(--color-muted, #6c7890);
+  font-weight: var(--fw-semibold, 600);
+  font-size: 12px;
+}
+
+.flatpickr-day {
+  color: var(--color-text, #35405f);
+  font-weight: var(--fw-medium, 500);
+  border-radius: 8px;
+  max-width: 40px;
+  height: 36px;
+  line-height: 36px;
+}
+
+.flatpickr-day:hover,
+.flatpickr-day:focus {
+  background: var(--color-primary-light, #f8eaff);
+  border-color: var(--color-primary-light, #f8eaff);
+  color: var(--color-primary-dark, #53259e);
+}
+
+.flatpickr-day.today {
+  border-color: var(--color-primary, #8f5abe);
+  color: var(--color-primary-dark, #53259e);
+}
+
+.flatpickr-day.today:hover {
+  background: var(--color-primary-light, #f8eaff);
+  border-color: var(--color-primary, #8f5abe);
+  color: var(--color-primary-dark, #53259e);
+}
+
+.flatpickr-day.selected,
+.flatpickr-day.selected:hover,
+.flatpickr-day.selected:focus,
+.flatpickr-day.selected.today {
+  background: var(--color-primary-dark, #53259e);
+  border-color: var(--color-primary-dark, #53259e);
+  color: var(--color-white, #ffffff);
+}
+
+.flatpickr-day.flatpickr-disabled,
+.flatpickr-day.flatpickr-disabled:hover,
+.flatpickr-day.prevMonthDay,
+.flatpickr-day.nextMonthDay {
+  color: var(--color-light-text, #8a93a8);
+  background: transparent;
+  border-color: transparent;
+}
+
+.manage-change-cell:has(.manage-date-input:disabled) .manage-change-route {
+  color: var(--color-light-text, #8a93a8);
+}
+
+.manage-section-hint {
+  margin: -8px 0 14px;
+  font-size: 12.5px;
+  color: var(--color-muted, #6c7890);
+}
+
+.manage-search-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: var(--fw-semibold, 600);
+  background: var(--gradient-primary);
+  color: var(--color-white, #ffffff);
+  border: 1.5px solid var(--color-primary-dark, #53259e);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.manage-search-btn:hover:not(:disabled) {
+  background: #43197f;
+}
+
+.manage-search-btn:disabled {
+  background: #cdc6e0;
+  border-color: #cdc6e0;
+  color: var(--color-white, #ffffff);
+  cursor: not-allowed;
+}
+
+/* Contact list */
+
+.manage-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.manage-contact-line {
+  font-size: 14px;
+  color: var(--color-text, #35405f);
+  line-height: 1.5;
+}
+
+.manage-contact-line strong {
+  color: var(--color-heading, #071431);
+  font-weight: var(--fw-bold, 700);
+  margin-right: 8px;
+}
+
+/* Total card */
+
+.manage-total-line {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 9px 0;
+  font-size: 14px;
+}
+
+.manage-total-line span {
+  color: var(--color-muted, #6c7890);
+  font-weight: var(--fw-medium, 500);
+}
+
+.manage-total-line strong {
+  color: var(--color-heading, #071431);
+  font-weight: var(--fw-semibold, 600);
+}
+
+.manage-total-divider {
+  height: 1px;
+  background: var(--color-border-light, #e8edf5);
+  margin: 6px 0;
+}
+
+.manage-total-grand {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 6px;
+}
+
+.manage-total-grand span {
+  font-size: 15px;
+  color: var(--color-heading, #071431);
+  font-weight: var(--fw-bold, 700);
+}
+
+.manage-total-grand strong {
+  font-size: 22px;
+  color: var(--color-primary-dark, #53259e);
+  font-weight: var(--fw-bold, 700);
+}
+
+.manage-total-note {
+  margin: 14px 0 0;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--color-muted, #6c7890);
+}
+
+/* Big Pay button */
+
+.manage-pay {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 18px 24px;
+  border-radius: 14px;
+  font-size: 17px;
+  font-weight: var(--fw-bold, 700);
+  background: var(--gradient-primary);
+  color: var(--color-white, #ffffff);
+  border: 1.5px solid var(--color-primary-dark, #53259e);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.manage-pay:hover:not(:disabled) {
+  background: #43197f;
+  color: var(--color-white, #ffffff);
+}
+
+.manage-pay:disabled {
+  background: #cdc6e0;
+  border-color: #cdc6e0;
+  cursor: not-allowed;
+}
+
+.manage-pay i {
+  font-size: 18px;
+}
